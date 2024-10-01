@@ -1,0 +1,72 @@
+.main{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 1.5rem;
+    min-height: 60px;
+}
+.svg{
+    fill: rgb(51, 51, 51)
+}
+.option__container{
+    display: flex;
+    flex-direction: row;
+    gap: 1.75rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    
+}
+.option__link{
+    transition: color 0.1s ease-out;
+}
+.option__link:hover{
+    color: var(--secondary-color);
+}
+.option__button{
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: var(--secondary-color);
+    padding: 0.65rem 1rem;
+    font-size: 0.8rem;
+    transition: background-color 0.1s ease-out;
+}
+.option__button:hover{
+    background-color: var(--secondary-color);
+}
+.option__button span{
+    transition: color 0.1s ease-out;
+}
+.option__button:hover span{
+    color: white;
+}
+.option__heart{
+    display: none;
+    fill: white;
+}
+.option__heart__button{
+    display: none;
+    aspect-ratio: 1;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+}
+.option__heart__button__path{
+    fill: white;
+}
+@media (width < 650px) {
+    .option__text{
+        display: none;
+    }
+    .option__heart{
+        display: initial;
+    }
+    .option__button{
+        display: none;
+    }
+    .option__heart__button{
+        display: grid;
+    }
+}

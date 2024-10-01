@@ -11,6 +11,16 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        // default: ColorScale,
+        primary: "var(--primary-color)",
+        secondary: "var(--secondary-color)",
+        alive: "var(--alive-color)",
+/*         success: ColorScale;
+        warning: ColorScale;
+        danger: ColorScale;
+ */
+        unknown: "var(--unknown-color)",
+        dead: "var(--dead-color)",
       },
     },
   },
